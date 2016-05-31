@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Fa-46-7XW" id="G7Z-pg-13m">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -87,9 +87,14 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="To Do" id="G4v-8A-dKf">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="g4j-c4-Uet"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="g4j-c4-Uet">
+                            <connections>
+                                <action selector="onEditButonPressed:" destination="BYZ-38-t0r" id="Hy3-E1-zl4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="editButton" destination="g4j-c4-Uet" id="TBp-Vn-ITr"/>
                         <outlet property="tableView" destination="KLc-WI-a7d" id="3uS-ew-cUN"/>
                         <outlet property="textField" destination="VlL-ar-Eze" id="nZy-ap-R8q"/>
                     </connections>
